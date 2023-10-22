@@ -1,0 +1,11 @@
+services:
+  
+  db:
+    image: mysql:latest
+    environment:
+      MYSQL_DATABASE: fx_deals
+      MYSQL_USER: deals
+      MYSQL_PASSWORD: password
+      MYSQL_ROOT_PASSWORD: password
+    ports:
+      - 3306:3306
